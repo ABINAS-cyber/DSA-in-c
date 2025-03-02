@@ -20,7 +20,6 @@ void push(){
         }
 }
 
-
 void pop(){
     int item;
 if(top<0){
@@ -30,6 +29,10 @@ else{
     item=stack[top];
     top=top-1;
 }
+        printf("\n after the upgradtion:");
+        for(int i=top;i>=0;i--){
+            printf("\n|%d|",stack[i]);
+        }
 }
 
 
